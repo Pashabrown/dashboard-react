@@ -1,20 +1,27 @@
-import React from "react"
+import React from "react";
 import "./styles.css";
-import AverageRating from "./components/AverageRating"
-import DashBoardMenu from "./components/DashBoardMenu"
-import Review from "./components/Review"
-import SentimentAnalysis from "./components/SentimentAnalysis"
-import WebsiteVisitors from "./components/WebsiteVisitors"
-function App() {
+
+//IMPORTING MY COMPONENTS
+import Reviews from "./components/Reviews"
+import Average from "./components/AverageRating"
+import Web from "./components/WebsiteVisitors"
+import Sentiment from "./components/SentimentAnalysis"
+import DashBoardMenu from "./components/DashBoardMenu";
+
+export default function App() {
   return (
-    <div className="App">
-      <DashBoardMenu styles="d" />
-      <Review />
-      <AverageRating />
-      <SentimentAnalysis />
-      <WebsiteVisitors />
-    </div>
+    <>
+  <div className="App">
+    <DashBoardMenu />
+    <Reviews />
+    <Average />
+    <Sentiment />
+    <Web />
+    
+
+  </div>
+  </>
   );
 }
 
-export default App;
+

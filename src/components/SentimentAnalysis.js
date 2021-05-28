@@ -1,9 +1,16 @@
+import React from "react"
+
 function SentimentAnalysis() {
-    return (<h3> SentimentAnalysis </h3>);
-      
-}
+    return (
+    <div className="sent">
+        <h4><button className="dash">Sentiment Analysis</button></h4>
+        <p> 960   </p>
+        <p> 122   </p>
+        <p> 321   </p>
+      </div>
+      )
 
-
+    }
 
 
 export default SentimentAnalysis
